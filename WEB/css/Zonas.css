@@ -1,0 +1,54 @@
+body {
+    background-image: url(fondo.jpg)
+}
+
+.bg-custom{
+    background-color:rgb(250, 192, 121) ;
+}
+
+/* CAJAS */
+.caja {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+}
+
+/* PIE DE PAGINA */
+footer {
+    background-color: #333;
+    color: #fff; 
+    padding: 20px; 
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.informacion, .redes-sociales {
+    flex-basis: 45%; 
+}
+
+.redes-sociales {
+    text-align: right; 
+}
+
+.redes-sociales a {
+    color: #fff; 
+    text-decoration: none; 
+    margin-right: 10px; 
+}
+
+.creditos {
+    text-align: center; 
+    margin-top: 20px; 
+}

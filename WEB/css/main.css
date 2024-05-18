@@ -1,0 +1,148 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+
+body {
+    background-image: url(fondo.jpg);
+}
+
+.barra {
+    width: 850px;
+    margin-left: 500px;
+}
+
+.carousel {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%; /* Ajusta el ancho del carrusel */
+}
+
+.caja {
+    border: 1px solid black;
+    width: 500px;
+    height: 480px;
+    margin-left: 50px;
+    margin-top: 50px;
+    background-color: bisque;
+}
+
+.caja2 {
+    border: 1px solid black;
+    width: 500px;
+    height: 620px;
+    margin-left: 50px;
+    margin-top: 50px;
+    background-color: bisque;
+}
+
+.cajalogo {
+    width: 30px;
+    height: 30px;
+    margin-left: 200px;
+}
+
+.cajaimg {
+    border: 1px solid transparent;
+    width: 400px;
+    height: 350px;
+    margin-left: 50px;
+    margin-top: 90px;
+}
+
+.contenedorbarrasuperior {
+    margin-bottom: 20px;
+}
+
+.bg-custom {
+    background-color: rgb(250, 192, 121);
+}
+
+.card.carta {
+    margin-right: 45px;
+}
+
+.descripcion {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px; 
+    margin-bottom: 20px; 
+    width: 80%; 
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.descripcion h2 {
+    color: #333;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.descripcion p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #333; 
+    color: #fff;
+    padding: 20px; 
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px; 
+}
+
+.informacion, .redes-sociales {
+    flex-basis: 45%;
+}
+
+.redes-sociales {
+    text-align: right; 
+}
+
+.redes-sociales a {
+    color: #fff; 
+    text-decoration: none; 
+    margin-right: 10px; 
+}
+
+.creditos {
+    text-align: center; 
+    margin-top: 20px; 
+}

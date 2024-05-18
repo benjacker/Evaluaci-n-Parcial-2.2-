@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Recetario</title>
+  <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body class="body">
+  
+  <nav class="navbar navbar-expand-lg bg-custom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="imagenes/logo.png"  style="width: 40px; height: 40px;">
+        El Recetario
+    </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Principal.html">Principal</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Buscar por Zona
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="ZonaNorte.html">Zona Norte</a></li>
+              <li><a class="dropdown-item" href="ZonaCentro.html">Zona Centro</a></li>
+              <li><a class="dropdown-item" href="ZonaSur.html">Zona Sur</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" ><span style="font-weight: bold; color: rgb(113, 151, 0);">Recomendados del Mes</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active"  aria-current="page" data-bs-toggle="modal" data-bs-target="#exampleModal"  >Cerrar Sesion</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" id="searchInput" placeholder="Buscar" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="contendor barrasuperior">
+    <h1><Center>El Recetario</Center></h1><br>
+  </div>
+  
+  <!-- Carrusel centrado -->
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <!-- Los intervalos para que se cambie automáticamente son 5000 milisegundos (5 segundos) -->
+      <div class="carousel-item active" data-bs-interval="5000">
+        <img src="imagenes/Carrusel/charqui.webp" style="width: 200px;height: 500px;" class="d-block w-100" alt="Imagen de Charqui">
+      </div>
+
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="imagenes/Carrusel/carne-mechada.webp" style="width: 200px;height: 500px;" class="d-block w-100" alt="Carne mechada">
+      </div>
+
+      <div class="carousel-item" data-bs-interval="5000">
+        <img src="imagenes/Carrusel/pantrucas.jpg" style="width: 200px;height: 500px;" class="d-block w-100" alt="Pantrucas">
+      </div>
+    </div>
+    <!-- Carrusel automático, cada 5 segundos cambia -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="descripcion">
+    <h2>¡Bienvenido a El Recetario!</h2>
+    <p>Tu fuente de deliciosas recetas chilenas te espera aquí. Descubre una amplia selección de platos tradicionales de la zona norte, centro y sur del país. Desde exquisitas empanadas de pino hasta reconfortantes cazuelas, nuestro objetivo es compartir contigo los sabores auténticos de la cocina chilena. Únete a nosotros y disfruta de estas maravillosas recetas.</p>
+  </div>
+
+  <!-- Modal Menú de cerrar sesión -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">¿Desea cerrar sesión?</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-footer">
+          <a href="InicioSesion.html" class="btn btn-primary">Sí</a>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Menú Offcanvas de recetas favoritas -->
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Recetas Recomendadas del Mes</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="card carta" style="width: 18rem;">
+        <img src="imagenes/Zona Centro/moteconhuesillo.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Mote con huesillos</h5>
+          <p class="card-text">
+            Nuestro Chef Ignacio Figueroa ha seleccionado uno de los brebajes mas importantes y deliciosos de nuestra cultura Nacional.<br>
+            Averigua como prepara este rico "postre" a continuacion.
+            <a href="ZonaCentro.html">Ver receta</a>
+        </p>
+        </div>
+      </div>
+      <div class="card carta" style="width: 18rem;">
+        <img src="imagenes/Zona Sur/curanto.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Curanto</h5>
+          <p class="card-text">
+            Para esto días frios nuestro experto gastronomico nos recomienda uno de los mejores platillos provenientes de la Isla grade de Chiloe.<br>
+            Averigua como prepara este rico platillo a continuacion.
+            <a href="ZonaSur.html">Ver receta</a>
+        </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="contenedor">
+        <div class="informacion">
+            <h2>Contacto</h2>
+            <p>Dirección: Antonio Varas 666, Santiago, Chile</p>
+            <p>Teléfono: +56 9 82864884</p>
+            <p>Email: elrecetario.contacto@gmail.com</p>
+        </div>
+        <div class="redes-sociales">
+            <h2>Redes Sociales</h2>
+            <a href="#">Facebook</a><br>
+            <a href="#">Instagram</a>
+        </div>
+    </div>
+    <div class="creditos">
+        <p>&copy; 2024 El Recetario.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="JavaScript/search.js"></script>
+</body>
+</html>
+
